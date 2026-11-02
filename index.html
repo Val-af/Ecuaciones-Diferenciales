@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Ecuaciones Diferenciales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="ec.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="encabezado">
+        <h1>
+            Ecuaciones lineales homogéneas de orden 2 con coeficientes constantes
+        </h1>
+    </header>
+    <main>
+        <section class="zona-trabajo">
+            <h2>Ingrese los coeficientes de la ecuación:</h2>
+            <form id="ecuacion-form" class="valores-form">
+                <div class="inputs-group">
+                    <input type="number" id="input-a" placeholder="a" class="cte" required> y'' +
+                    <input type="number" id="input-b" placeholder="b" class="cte" required> y' +
+                    <input type="number" id="input-c" placeholder="c" class="cte" required> y = 0
+                </div>
+
+                <button type="submit" class="boton" id="resolver">Resolver</button>
+            </form>
+        </section>
+
+        <section class="resolución">
+            <h2>Ecuación característica:</h2>
+            <div id="salida-ecuacion" class="salida">
+                Salida de ecuación
+            </div>
+
+            <h2>Raíces:</h2>
+            <div id="salida-raices" class="salida">
+                Raíces
+            </div>
+
+            <h2>Soluciones</h2>
+            <div id="salida-soluciones" class="salida">
+                Soluciones
+            </div>
+
+            <h2>Solución general</h2>
+            <div id="salida-genral" class="salida">
+                Solución general
+            </div>
+        </section>
+    </main>
+
+    <script src="script1.js"></script>
+</body>
+</html>
